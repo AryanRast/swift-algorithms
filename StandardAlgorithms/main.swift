@@ -12,3 +12,6 @@ print("Hello, World!")
 
 let name = "ARYAN"
 print(name)
+
+print(name)
+
