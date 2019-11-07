@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		C64E1EE623718CD0003AFCC0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E1EE523718CD0003AFCC0 /* main.swift */; };
 		C64E1EF32371923C003AFCC0 /* Standrad_AlgortihmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E1EF22371923C003AFCC0 /* Standrad_AlgortihmsTests.swift */; };
+		C6A5FFF523743DBB00DD0A9B /* SortingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A5FFF423743DBB00DD0A9B /* SortingTest.swift */; };
+		C6A5FFF823743F4300DD0A9B /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A5FFF623743F0F00DD0A9B /* Sorting.swift */; };
+		C6A5FFFA2374452800DD0A9B /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A5FFF623743F0F00DD0A9B /* Sorting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +32,8 @@
 		C64E1EF02371923C003AFCC0 /* Standrad-AlgortihmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Standrad-AlgortihmsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64E1EF22371923C003AFCC0 /* Standrad_AlgortihmsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Standrad_AlgortihmsTests.swift; sourceTree = "<group>"; };
 		C64E1EF42371923C003AFCC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6A5FFF423743DBB00DD0A9B /* SortingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingTest.swift; sourceTree = "<group>"; };
+		C6A5FFF623743F0F00DD0A9B /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				C64E1EE523718CD0003AFCC0 /* main.swift */,
+				C6A5FFF623743F0F00DD0A9B /* Sorting.swift */,
 			);
 			path = StandardAlgorithms;
 			sourceTree = "<group>";
@@ -80,6 +86,7 @@
 			children = (
 				C64E1EF22371923C003AFCC0 /* Standrad_AlgortihmsTests.swift */,
 				C64E1EF42371923C003AFCC0 /* Info.plist */,
+				C6A5FFF423743DBB00DD0A9B /* SortingTest.swift */,
 			);
 			path = "Standrad-AlgortihmsTests";
 			sourceTree = "<group>";
@@ -173,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6A5FFF823743F4300DD0A9B /* Sorting.swift in Sources */,
 				C64E1EE623718CD0003AFCC0 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +189,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6A5FFFA2374452800DD0A9B /* Sorting.swift in Sources */,
+				C6A5FFF523743DBB00DD0A9B /* SortingTest.swift in Sources */,
 				C64E1EF32371923C003AFCC0 /* Standrad_AlgortihmsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
