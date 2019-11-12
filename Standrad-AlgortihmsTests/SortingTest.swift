@@ -33,15 +33,41 @@ class SortingTest: XCTestCase {
     }
     func testMergeSortForMergedArrays(){
         let sorting = Sorting()
-        let testCases = [(inputOne: [2, 4, 6, 8]), inputTwo,: [1, 3, 5, 7]), expected: [1, 2, 3, 4, 5, 6, 7, 8]), (inputOne: [45, 56, 76, 81], inputTwo:[1, 67, 85, 100], expected: [1, 45, 56, 76, 81, 65, 100])]
-        
+        let testCases = [(inputOne: [2, 4, 6, 8], inputTwo: [1, 3, 5, 7], expected: [1, 2, 3, 4, 5, 6, 7, 8]), (inputOne: [45, 56, 76, 81], inputTwo:[1, 67, 85, 100], expected: [1, 45, 56, 67, 76, 81, 85, 100])]
         for testCase in testCases {
-            let actual = sorting.merge(left: testCase.inputOne, right: testCase.inputTwo)
+            let actual = sorting.merge(leftArray: testCase.inputOne, rightArray: testCase.inputTwo)
             XCTAssertEqual(actual, testCase.expected)
         }
         
     }
     
+    func testMergesortForSorting() {
+        let sorting = Sorting()
+        let testCases = [(input: [10, 3, 7, 4, 9], expected: [3, 4, 7, 9, 10]), (input: [456, 56, 1, 500, 99], expected: [1, 56, 99, 456, 500])]
+        for testCase in testCases {
+            let actual = sorting.mergeSort(array: testCase.input)
+            XCTAssertEqual(actual, testCase.expected)
+        }
+    }
+    
+    func testQuickSortWithMultileInteerArrays() {
+        let sorting = Sorting()
+        let testCases = [(input: [10, 3, 7, 4, 9], expected: [3, 4, 7, 9, 10]), (input: [456, 56, 1, 500, 99], expected: [1, 56, 99, 456, 500])]
+        for testCase in testCases {
+            let actual = sorting.quickSort(data: testCase.input)
+            XCTAssertEqual(actual, testCase.expected)
+        }
+    }
+    
+    func testInsertinSortWithMultipeIntegerArrays() {
+        var sorting = Sorting()
+        var testCases = [(input: [10, 3, 7, 4, 9], expected: [3, 4, 7, 9, 10]), (input: [456, 56, 1, 500, 99], expected: [1, 56, 99, 456, 500])]
+        for testCase in testCases {
+            let actual = sorting.insertionSort(data: &testCase.input)(data: &testCase.input)
+            XCTAssertEqual(actual, testCase.expected)
+        }
+        
+    }
     
 }
 
