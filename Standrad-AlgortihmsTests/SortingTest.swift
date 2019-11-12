@@ -50,24 +50,6 @@ class SortingTest: XCTestCase {
         }
     }
     
-    func testQuickSortWithMultileInteerArrays() {
-        let sorting = Sorting()
-        let testCases = [(input: [10, 3, 7, 4, 9], expected: [3, 4, 7, 9, 10]), (input: [456, 56, 1, 500, 99], expected: [1, 56, 99, 456, 500])]
-        for testCase in testCases {
-            let actual = sorting.quickSort(data: testCase.input)
-            XCTAssertEqual(actual, testCase.expected)
-        }
-    }
-    
-    func testInsertinSortWithMultipeIntegerArrays() {
-        var sorting = Sorting()
-        var testCases = [(input: [10, 3, 7, 4, 9], expected: [3, 4, 7, 9, 10]), (input: [456, 56, 1, 500, 99], expected: [1, 56, 99, 456, 500])]
-        for testCase in testCases {
-            let actual = sorting.insertionSort(data: &testCase.input)(data: &testCase.input)
-            XCTAssertEqual(actual, testCase.expected)
-        }
         
-    }
-    
 }
 

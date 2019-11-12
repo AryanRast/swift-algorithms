@@ -110,19 +110,18 @@ class Sorting {
         }
     }
         
-    func insertionSort(dataArray: [Int]) -> [Int] {
-        var data = dataArray[0..<dataArray.count]
-        for i in 1 ..< data.count {
-            let temp = data[i]
-            var j = i - 1
-            while j >= 0 && data[j] > temp {
-                data[j+1] = data[j]
-                j = j - 1
-            }
+   func insertionSort(data: inout [Int]) -> [Int] {
+       for i in 1 ..< data.count {
+           let temp = data[i]
+           var j = i - 1
 
-            data[j+1] = temp
-        }
-        return data
-    }
-  
+           while j >= 0 && data[j] > temp {
+               data[j+1] = data[j]
+               j = j - 1
+           }
+
+           data[j+1] = temp
+       }
+       return(data)
+   }
 }
